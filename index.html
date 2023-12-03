@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="main-nav">
+      <header class="navHeader">
+        <div class="inner">
+          <div class="logo-wrap">
+            <a href="/">
+              <svg class="brand-logo">
+                <use href="images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="desktop-actions">
+            <nav class="navigationBar">
+              <div class="nav-left">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <div class="has-menu">
+                      <span class="nav-item-button">Product</span>
+                    </div>
+                    <div class="popup">
+                      <div class="menu">
+                        <div class="menu-section">
+                          <div class="nav-section nav-section-content">
+                            <ul class="nav-list">
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-icon">
+                                      <svg class="icon icon-red icon-small">
+                                        <use
+                                          href="images/sprite.svg#bookOpen"
+                                        ></use>
+                                      </svg>
+                                    </div>
+                                    <div class="nav-item-body">
+                                      <span class="label">Wikis</span>
+                                      <span class="description">
+                                        Centralize your knowledge
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-icon">
+                                      <svg class="icon icon-blue icon-small">
+                                        <use
+                                          href="images/sprite.svg#projectsIcon"
+                                        ></use>
+                                      </svg>
+                                    </div>
+                                    <div class="nav-item-body">
+                                      <span class="label">Projects</span>
+                                      <span class="description">
+                                        For every team or size
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-icon">
+                                      <svg class="icon icon-yellow icon-small">
+                                        <use href="images/sprite.svg#doc"></use>
+                                      </svg>
+                                    </div>
+                                    <div class="nav-item-body">
+                                      <span class="label">Docs</span>
+                                      <span class="description">
+                                        Simple & powerful
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-icon">
+                                      <svg class="icon icon-purple icon-small">
+                                        <use
+                                          href="images/sprite.svg#sparkles"
+                                        ></use>
+                                      </svg>
+                                    </div>
+                                    <div class="nav-item-body">
+                                      <span class="label">Notion AI</span>
+                                      <span class="description">
+                                        Integrated AI assistant
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="menu-section">
+                          <div class="nav-section nav-section-content">
+                            <ul class="nav-list">
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-body">
+                                      <span class="label"
+                                        >Template gallery</span
+                                      >
+                                      <span class="description">
+                                        Setups to get you started
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-body">
+                                      <span class="label"
+                                        >Customer stories</span
+                                      >
+                                      <span class="description">
+                                        See how teams use Notion
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-body">
+                                      <span class="label">Connection</span>
+                                      <span class="description">
+                                        connect your tools to Notion
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="has-menu">
+                      <span class="nav-item-button">Download</span>
+                    </div>
+                    <div class="popup">
+                      <div class="menu">
+                        <div class="menu-section">
+                          <div class="nav-section nav-section-list">
+                            <ul class="nav-list">
+                              <li class="nav-item">
+                                <a href="#">iOS & Android</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Mac & Windows</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Web Clipper</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="has-menu">
+                      <span class="nav-item-button">Solutions</span>
+                    </div>
+                    <div class="popup">
+                      <div class="menu">
+                        <div class="menu-section">
+                          <div class="nav-section nav-section-content">
+                            <div class="nav-section-title smallcaps">
+                              By team size
+                            </div>
+                            <ul class="nav-list">
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-icon">
+                                      <img
+                                        src="images/team-size-enterprise.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="nav-item-body">
+                                      <span class="label">Enterprise</span>
+                                      <span class="description">
+                                        Advanced features for your org
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-icon">
+                                      <img
+                                        src="images/team-size-small-business.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="nav-item-body">
+                                      <span class="label">Small business</span>
+                                      <span class="description">
+                                        Run your team on one tool
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">
+                                  <div class="nav-item-inner">
+                                    <div class="nav-item-icon">
+                                      <img
+                                        src="images/team-size-personal.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="nav-item-body">
+                                      <span class="label">Personal</span>
+                                      <span class="description">
+                                        Free for individuals
+                                      </span>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="menu-section">
+                          <div class="nav-section nav-section-list">
+                            <div class="nav-section-title smallcaps">
+                              By team function
+                            </div>
+                            <ul class="nav-list">
+                              <li class="nav-item">
+                                <a href="#">Design</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Engineering</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Product</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Managers</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="menu-section">
+                          <div class="nav-section nav-section-list">
+                            <div class="nav-section-title smallcaps">
+                              Notion for
+                            </div>
+                            <ul class="nav-list">
+                              <li class="nav-item">
+                                <a href="#">Startups</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Remote work</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Education</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Nonprofits</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="has-menu">
+                      <span class="nav-item-button">Resources</span>
+                    </div>
+                    <div class="popup">
+                      <div class="menu">
+                        <div class="menu-section">
+                          <div class="nav-section nav-section-list">
+                            <ul class="nav-list">
+                              <li class="nav-item">
+                                <a href="#">Blog</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Guides & tutorials</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Webinars</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Help center</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">API docs</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Community</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#">Find a consultant</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <span class="nav-item-button"><a href="#">Pricing</a></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-right">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <span class="nav-item-button"
+                      ><a href="#">Request a demo</a></span
+                    >
+                  </li>
+                </ul>
+                <div class="divider"></div>
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <span class="nav-item-button"><a href="#">Log in</a></span>
+                  </li>
+                  <li class="cta-item">
+                    <a href="#" class="btn btn-primary">
+                      <span>Get Notion free</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="mobile-actions">
+            <!-- <a href="#" class="btn btn-primary cta-item">
+              <span>Get Notion free</span>
+            </a> -->
+            <button class="btn-toggle">
+              <svg class="icon icon-black show-toggle-btn">
+                <use href="images/sprite.svg#hamburger"></use>
+              </svg>
+              <svg class="icon icon-black">
+                <use href="images/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <nav class="mobile-nav">
+        <div class="mobile-nav-inner">
+          <div class="mobile-nav-section">
+            <div class="section-label has-menu">Product</div>
+            <div class="menu-drawer">
+              <div class="menu">
+                <div class="nav-section">
+                  <ul class="nav-list">
+                    <li class="nav-item">
+                      <a href="#">
+                        <svg class="icon icon-red icon-small">
+                          <use href="images/sprite.svg#bookOpen"></use>
+                        </svg>
+                        <span class="label">Wikis</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">
+                        <img
+                          src="images/projects-icon.webp"
+                          class="icon-small"
+                          alt="Projects"
+                        />
+                        <span class="label">Projects</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">
+                        <svg class="icon icon-yellow icon-small">
+                          <use href="images/sprite.svg#doc"></use>
+                        </svg>
+                        <span class="label">Docs</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">
+                        <svg class="icon icon-purple icon-small">
+                          <use href="images/sprite.svg#sparkles"></use>
+                        </svg>
+                        <span class="label">Notion AI</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-section">
+                  <ul class="nav-list">
+                    <li class="nav-item">
+                      <a href="#">
+                        <span class="label">Template gallery</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">
+                        <span class="label">Customer stories</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">
+                        <span class="label">Connection</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-nav-section">
+            <div class="section-label has-menu">Solutions</div>
+            <div class="menu-drawer">
+              <div class="menu">
+                <div class="menu-section">
+                  <div class="nav-section nav-section-list">
+                    <div class="nav-section-title smallcaps">by team size</div>
+                    <ul class="nav-list">
+                      <li class="nav-item">
+                        <a href="#">Enterprise</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Small business</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Personal</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="menu-section">
+                  <div class="nav-section nav-section-list">
+                    <div class="nav-section-title smallcaps">
+                      by team function
+                    </div>
+                    <ul class="nav-list">
+                      <li class="nav-item">
+                        <a href="#">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Engineering</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Managers</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="menu-section">
+                  <div class="nav-section nav-section-list">
+                    <div class="nav-section-title smallcaps">Notion for</div>
+                    <ul class="nav-list">
+                      <li class="nav-item">
+                        <a href="#">Startups</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Remote work</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Education</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Nonprofits</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-nav-section">
+            <div class="section-label has-menu">Resources</div>
+            <div class="menu-drawer">
+              <div class="menu">
+                <div class="menu-section">
+                  <div class="nav-section nav-section-list">
+                    <ul class="nav-list">
+                      <li class="nav-item">
+                        <a href="#">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Guides & tutorials</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Webinars</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Help center</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">API docs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Community</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Find a consultant</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-nav-section">
+            <div class="section-label has-menu">Download</div>
+            <div class="menu-drawer">
+              <div class="menu">
+                <div class="menu-section">
+                  <div class="nav-section nav-section-list">
+                    <ul class="nav-list">
+                      <li class="nav-item">
+                        <a href="#">iOS & Android</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">mac & Windows</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">Web Clipper</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-nav-section">
+            <div class="section-label">Pricing</div>
+          </div>
+          <div class="mobile-nav-section">
+            <div class="section-label">Request a demo</div>
+          </div>
+          <div class="cta-items">
+            <a href="#" class="btn btn-primary cta-item">
+              <span>Get Notion free</span>
+            </a>
+            <a href="#" class="btn cta-item">
+              <span>Log in</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <section class="homeHero container">
+        <header class="homeHero_header">
+          <h1 class="homeHero_header-title" style="font-size: 70px; margin-top: -60px">
+            Write, plan, share.
+            <br class="HomeHero_textBreak" />
+            With AI at your side.
+          </h1>
+          <h2 class="homeHero_subtitle">
+            Notion is the connected
+            <br class="HomeHero_textBreak" /> workspace where
+            better, faster work happens.
+          </h2>
+          <a href="#" class="btn btn-primary btn-arrow"
+            ><span>Get Notion free</span></a
+          >
+        </header>
+        <picture class="homeHero_picture">
+          <img src="images/home-hero.webp" alt="Home Hero" />
+        </picture>
+      </section>
+
+      <div class="carousel-container">
+        <div class="card purple-theme">
+          <!-- Card Content Goes Here -->
+          <h2>AI</h2>
+          <p>Ask literally anything. Notion will answer.</p>
+          <a href="https://www.notion.so/product/ai">Learn more →</a>
+        </div>
+
+        <div class="card red-theme">
+          <!-- Card Content Goes Here -->
+          <h2>Wikis</h2>
+          <p>Centralize your knowledge. No more hunting for answers.</p>
+          <a href="https://notion.so/product/wikis">Learn more →</a>
+        </div>
+
+        <div class="card blue-theme">
+          <!-- Card Content Goes Here -->
+          <h2>Projects</h2>
+          <p>Manage complex projects without the chaos.</p>
+          <a href="https://www.notion.so/product/projects">Learn more →</a>
+        </div>
+
+        <div class="card yellow-theme">
+          <!-- Card Content Goes Here -->
+          <h2>Docs</h2>
+          <p>Simple, powerful, beautiful. Next-gen notes & docs.</p>
+          <a href="https://www.notion.so/product/docs">Learn more →</a>
+        </div>
+      </div>
+
+
+      <div class="HomeSidekick_sidekick">
+        <picture class="homeHero_picture">
+          <img src="images/sidekick-desktop-app.png" alt="Home Hero" />
+        </picture>
+      </div>
+
+      <section class="HomeCustomerWall container">
+        <header class="HomeCustomerWall_header">
+          <h2 class="heading-title">Millions run on Notion every day</h2>
+          <div class="HomeCustomerWall-subHeader">
+            <h3 class="heading-subTitle">
+              Powering the world's best teams, from next-generation startups to
+              established enterprises.
+            </h3>
+            <a href="#" class="link-arrow link-arrow-blue"
+              ><span> Read customer stories</span></a
+            >
+          </div>
+        </header>
+        <div class="HomeCustomerWall_logo">
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/figma-logo.png" alt="figma-logo" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/pixar.png" alt="pixar" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img
+              src="images/customers/doordash.png"
+              alt="doordash"
+              style="max-width: 135px; max-height: 55px"
+            />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/nike.png" alt="nike" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/amazon.png" alt="amazon" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/pinterest.png" alt="pinterest" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img
+              src="images/customers/General_Electric_logo.svg__1_.png"
+              style="max-width: 50px; max-height: 50px"
+              alt="General_Electric_logo"
+            />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/uber.png" alt="uber" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/plaid.png" alt="plaid" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/toyota.png" alt="toyota" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img
+              src="images/customers/snowflake.png"
+              style="max-width: 101px; max-height: 55px"
+              alt="snowflake"
+            />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img
+              src="images/customers/headspace.png"
+              style="max-width: 106px; max-height: 55px"
+              alt="headspace"
+            />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img src="images/customers/angel-list.png" alt="angel-list" />
+          </div>
+          <div class="HomeCustomerWall_logoContainer">
+            <img
+              src="images/customers/robinhood_logo.png"
+              alt="robinhood_logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="home-products container">
+        <h2 class="heading-title home-product-title">
+          Finally, all your work in one place
+        </h2>
+        <section class="home-product">
+          <div class="home-product-content">
+            <div class="home-product-content-media">
+              <header class="home-product-contentHeader">
+                <svg class="icon icon-red">
+                  <use href="images/sprite.svg#bookOpen"></use>
+                </svg>
+                <h3 class="home-product-content-title">Wikis</h3>
+              </header>
+              <p class="home-product-content-description">
+                It's hard to move fast if you can't find anything. Centralize
+                all your knowledge in Notion.
+              </p>
+              <a href="#" class="link-arrow link-arrow-red"
+                ><span>Explore</span></a
+              >
+            </div>
+          </div>
+          <div class="home-product-illustration">
+            <img
+              src="images/wiki-illo.webp"
+              alt=""
+              class="homeProducts_illustration-image"
+            />
+          </div>
+          <div class="home-product-image">
+            <img src="images/engineering-wiki-V2.png" alt="" />
+          </div>
+        </section>
+        <section class="home-product">
+          <div class="home-product-content">
+            <div class="home-product-content-media">
+              <header class="home-product-contentHeader">
+                <svg class="icon icon-yellow">
+                  <use href="images/sprite.svg#doc"></use>
+                </svg>
+                <h3 class="home-product-content-title">Docs</h3>
+              </header>
+              <p class="home-product-content-description">
+                Simple. Powerful. Beautiful. Communicate more efficiently with
+                next generation docs.
+              </p>
+              <a href="#" class="link-arrow link-arrow-yellow"
+                ><span>Explore</span></a
+              >
+            </div>
+          </div>
+          <div class="home-product-illustration">
+            <img
+              src="images/docs-illo.webp"
+              alt="docs-illo"
+              class="homeProducts_illustration-image"
+            />
+          </div>
+          <div class="home-product-image">
+            <img src="images/meeting-notes.webp" alt="meeting-notes" />
+          </div>
+        </section>
+        <section class="home-product">
+          <div class="home-product-content">
+            <div class="home-product-content-media">
+              <header class="home-product-contentHeader">
+                <svg class="icon icon-blue">
+                  <use href="images/sprite.svg#path"></use>
+                </svg>
+                <h3 class="home-product-content-title">Projects</h3>
+              </header>
+              <p class="home-product-content-description">
+                Manage any type of project more efficiently. No separate, clunky
+                system.
+              </p>
+              <a href="#" class="link-arrow link-arrow-blue"
+                ><span>Explore</span></a
+              >
+            </div>
+          </div>
+          <div class="home-product-illustration">
+            <img
+              src="images/projects-illo.webp"
+              alt=""
+              class="homeProducts_illustration-image"
+            />
+          </div>
+          <div class="home-product-image">
+            <img src="images/projects.webp" alt="projects" />
+          </div>
+        </section>
+        <section class="home-product">
+          <div class="home-product-content">
+            <div class="home-product-content-media">
+              <header class="home-product-contentHeader">
+                <svg class="icon icon-blue">
+                  <use href="images/sprite.svg#sparkles"></use>
+                </svg>
+                <h3 class="home-product-content-title">Notion AI</h3>
+              </header>
+              <p class="home-product-content-description">
+                It's hard to move fast if you can't find anything. Centralize
+                all your knowledge in Notion.
+              </p>
+              <a href="#" class="link-arrow link-arrow-blue"
+                ><span>Explore</span></a
+              >
+            </div>
+          </div>
+          <div class="home-product-illustration">
+            <img
+              src="images/ai-illo-V5.webp"
+              alt=""
+              class="homeProducts_illustration-image"
+            />
+          </div>
+          <div class="home-product-image">
+            <img src="images/ai-V5.webp" alt="ai-V5" />
+          </div>
+        </section>
+      </section>
+
+      <section class="consolidate-tools">
+        <div class="consolidateTools_header">
+          <h2
+            class="heading-title homeHero_header-title consolidateTools_header-title"
+          >
+            Consolidate tools. Cut costs.
+          </h2>
+          <div class="consolidateTools-strikethroughEffectContainer">
+            <div class="homeConsolidate-overlay">
+              <div class="homeConsolidateTools_strikethroughEffect">
+                <img
+                  src="images/tools-before-notion-V2.webp"
+                  alt="tools-before-notion-V2"
+                />
+              </div>
+              <div class="homeConsolidateTools_toolsStrikethrough">
+                <img
+                  src="images/tools-strikethrough-V2.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="homeConsolidateTools_pencilPeekIllustration">
+              <img src="images/pencil-peek-illustration-V2.webp" alt="" />
+            </div>
+            <div class="homeConsolidateTools_giantPencilIllustration">
+              <img src="images/giant-pencil-illustration.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="blockQuote_quote">
+          <blockquote class="blockQuote_quote-title">
+            "We got rid of nearly a dozen different tools because of what Notion
+            does for us."
+          </blockquote>
+          <div class="blockQuote_quoteCaption">
+            <img
+              src="images/metalab.webp"
+              alt="metalab"
+              class="blockQuote-image"
+            />
+            <div class="blockQuote_author">
+              <p class="blockQuote_author-title">Justin Watt</p>
+              <p class="blockQuote_author-designation">
+                Director of Ops & Marketing, MetaLab
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <hr width="100%">
+    <footer>
+      <div>
+        <a href="#">Product</a>
+        <a href="#">Wikis</a>
+        <a href="#">Projects</a>
+        <a href="#">Docs</a>
+        <a href="#">Notion AI</a>
+        <a href="#">What’s new</a>
+        <a href="#">Solutions</a>
+      </div>
+      <div>
+        <a href="#">Enterprise</a>
+        <a href="#">Small business</a>
+        <a href="#">Personal use</a>
+        <a href="#">Remote work</a>
+        <a href="#">Startups</a>
+        <a href="#">Education</a>
+        <a href="#">Nonprofits</a>
+        <a href="#">Engineering</a>
+      </div>
+      <div>
+        <a href="#">Product</a>
+        <a href="#">Design</a>
+        <a href="#">Managers</a>
+        <a href="#">Download</a>
+        <a href="#">iOS & Android</a>
+        <a href="#">Mac & Windows</a>
+        <a href="#">Web Clipper</a>
+      </div>
+      <div>
+        <a href="#">Integrations</a>
+        <a href="#">Templates</a>
+        <a href="#">API docs</a>
+        <a href="#">Guides & tutorials</a>
+        <a href="#">Hire a consultant</a>
+        <a href="#">Become an affiliate</a>
+        <a href="#">Customer stories</a>
+        <a href="#">Help center</a>
+        <a href="#">Webinars</a>
+        <a href="#">Blog</a>
+      </div>
+      <div>
+        <a href="#">Community</a>
+        <a href="#">Get started</a>
+        <a href="#">Switch from Confluence</a>
+        <a href="#">Switch from Asana</a>
+        <a href="#">Switch from Evernote</a>
+        <a href="#">Compare vs Monday</a>
+      </div>
+      <div>
+        <a href="#">Compare vs Clickup</a>
+        <a href="#">Compare vs Jira</a>
+        <a href="#">Resources</a>
+        <a href="#">Pricing</a>
+        <a href="#">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Media kit</a>
+      </div>
+      <div>
+        <a href="#">Email us</a>
+        <a href="#">Security</a>
+        <a href="#">Cookie settings</a>
+        <a href="#">Terms & privacy</a>
+        <a href="#">California Privacy Notice</a>
+        <a href="#">Status</a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
